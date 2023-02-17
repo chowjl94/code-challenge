@@ -9,3 +9,8 @@ _You may use any third party plugin, library, and/or framework for this problem.
 1. You may add input validation/error messages to make the form interactive.
 2. Your submission will be rated on its usage intuitiveness and visual attractiveness.
 3. Show us your frontend development and design skills, feel free to totally disregard the provided files for this problem.
+
+# Additional Info
+
+Created a react app , with tailwind.
+Install node modules and run npm start

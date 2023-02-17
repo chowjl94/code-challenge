@@ -11,3 +11,7 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+
+# Additional Info
+
+Used hardhat to deploy smart contract to Goerli test net with alchemy
