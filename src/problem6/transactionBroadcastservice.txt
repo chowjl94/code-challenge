@@ -1,0 +1,37 @@
+
+To sign and broadcast transactions on the blockchain , we should take into account scalability, reliability, and security
+The service should be designed with scalability, reliability, and security in mind.
+
+To design a transaction broadcaster service, the following specifications are recommended:
+
+5 main areas we can look into
+
+1- Service Architecture:
+We can implement microservice architecture with each service responsible for a specific function.
+It should be scalabile(ability to handle large number of transaction) , reliable(should peform well) and secure
+
+2- API exposure
+The Broadcasting service should have an API that is being exposed to clients for Broadcasting
+This APIs should be implemented and be secured with HTTPs protocols , rate limiting, authentication mechanisms
+for security
+
+3- Transcation mechanisms
+    A. signing: using Private Keys  and secure key management system
+
+    B. broadcast: Transactions should be boradcasted to EVM compatible chains. 
+                  A retry mechanism for failure handling without continuous spamming to the network
+
+    C. monitoring: Tracking statuses of transaction in real-time for client feedback
+                   analytics can be integrated here as well( volume , status , performance)
+
+4- Backup 
+In the event of a system failure , a mechanism can be implemented by inserting transaction data in another database
+and duplicated across serveral nodes.
+
+
+5- Admin Based Controls
+Admins rights to manage the service through an interface, monitoring peformance and configuring/modifying the service.
+Access to logs for root cause analysis , tracking peformance and troubleshooting.
+
+
+
